@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <main class="wrapper">
+    <header id="header">
+      <div class="desk-bar">
+        <nav class="navbar">
+          <div class="left">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="">
+            </div>
+            <ul class="nav-links">
+              <li class="drop-item"><span class="txt">Features</span>
+                <img class="aero-down" src="./images/icon-arrow-down.svg" alt="">
+                <ul class="sub-menu">
+                  <li class="list-item"><img src="./images/icon-todo.svg" alt=""><span>Todo list</span></li>
+                  <li class="list-item"><img src="./images/icon-calendar.svg" alt=""><span>Calendar</span></li>
+                  <li class="list-item"><img src="./images/icon-reminders.svg" alt=""><span>Reminders</span></li>
+                  <li class="list-item"><img src="./images/icon-planning.svg" alt=""><span>Planning</span></li>
+                </ul>
+              </li>
+              <li class="drop-item"><span class="txt">Company</span><img src="./images/icon-arrow-down.svg"
+                  class="aero-down" alt="">
+                <ul class="sub-menu">
+                  <li class="list">History</li>
+                  <li class="list">Our Team</li>
+                  <li class="list">Blog</li>
+                </ul>
+              </li>
+              <li class="drop-item">Careers</li>
+              <li class="drop-item">About</li>
+            </ul>
+          </div>
+          <div class="right">
+            <li>Login</li>
+            <button class="btn">Register</button>
+          </div>
+        </nav>
+      </div>
+      <div class="mob-bar">
+        <nav class="navbar">
+          <div>
+            <img src="./images/logo.svg" alt="">
+          </div>
+          <div class="menu-bar">
+            <img src="./images/icon-menu.svg" alt="">
+          </div>
+        </nav>
+        <div class="sidebar hidden">
+          <div class="close-bar">
+            <img src="./images/icon-close-menu.svg" alt="">
+          </div>
+
+          <ul class="nav-links">
+            <li class="drop-item" onclick="toggleSubMenu(1)">
+              <a href="#" class="list-item">
+                <span>Features</span>
+                <img src="./images/icon-arrow-down.svg" alt="" class="icon-arrow-down">
+              </a>
+              <ul class="sub-menu hidden ss1">
+                <li class="list-item"><img src="./images/icon-todo.svg" alt=""><span>Todo list</span></li>
+                <li class="list-item"><img src="./images/icon-calendar.svg" alt=""><span>Calendar</span></li>
+                <li class="list-item"><img src="./images/icon-reminders.svg" alt=""><span>Reminders</span></li>
+                <li class="list-item"><img src="./images/icon-planning.svg" alt=""><span>Planning</span></li>
+              </ul>
+            </li>
+            <li class="drop-item" onclick="toggleSubMenu(2)">
+              <a href="#" class="list-item">
+                <span>Company</span>
+                <img src="./images/icon-arrow-down.svg" alt="" class="icon-arrow-down">
+              </a>
+              <ul class="sub-menu hidden ss2">
+                <li class="list-item">History</li>
+                <li class="list-item">Our Team</li>
+                <li class="list-item">Blog</li>
+              </ul>
+            </li>
+            <li class="drop-item">Careers</li>
+            <li class="drop-item">About</li>
+          </ul>
+          <div class="bottom">
+            <p class="txt">Login</p>
+            <button class="btn">Register</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="hero">
+      <article class="txt-content">
+        <h1 class="title">Make <span>remote work</span></h1>
+        <p class="desc">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn hero-btn">Learn more</button>
+        <div class="client">
+          <div><img src="./images/client-databiz.svg" alt=""></div>
+          <div><img src="./images/client-audiophile.svg" alt=""></div>
+          <div><img src="./images/client-meet.svg" alt=""></div>
+          <div><img src="./images/client-maker.svg" alt=""></div>
+        </div>
+      </article>
+      <div class="home-image">
+        <div class="desk-img">
+          <img src="./images/image-hero-desktop.png" alt="">
+        </div>
+        <div class="mob-img">
+          <img src="./images/image-hero-mobile.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/zihad-hossion" target="_blank">Zihad Hossion</a>.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

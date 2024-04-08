@@ -1,0 +1,155 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 7rem 0 10rem;
+}
+
+.txt-content {
+    align-self: flex-end;
+
+    .title {
+        font-size: 4.25rem;
+        margin-bottom: 2.5rem;
+
+        span {
+            display: block;
+        }
+    }
+
+    .desc {
+        color: $Gray;
+        max-width: 420px;
+        font-size: .9rem;
+        line-height: 1.4;
+        margin-bottom: 2.5rem;
+    }
+
+    .btn {
+        font-weight: 700;
+        color: $White;
+        background: $Black;
+        border: 1px solid $Black;
+        padding: .8rem 1.5rem;
+        border-radius: .8rem;
+        margin-bottom: 3rem;
+
+        &:hover {
+            cursor: pointer;
+            color: $Black;
+            background: transparent;
+        }
+    }
+
+    .client {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+.home-image {
+    flex: 0 0 auto;
+    width: 400px;
+
+    .mob-img {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    #hero {
+        gap: 1rem;
+        padding: 3rem 7rem 0 7rem;
+    }
+
+    .txt-content {
+        .title {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    #hero {
+        gap: 2rem;
+        padding: 3rem 5rem 0 5rem;
+    }
+
+    .txt-content {
+        width: 100%;
+
+        .title {
+            font-size: 3rem;
+        }
+    }
+
+    .home-image {
+        width: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    #hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .home-image {
+        .desk-img {
+            display: none;
+        }
+
+        .mob-img {
+            display: block;
+        }
+    }
+
+    .txt-content {
+        text-align: center;
+
+        .title {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (max-width:550px) {
+    #hero {
+        padding: 0;
+        gap: 0;
+    }
+
+    .home-image {
+        width: 100%;
+    }
+
+    .txt-content {
+        padding: 0 .5rem;
+        margin-top: 1rem;
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+
+            span {
+                display: inline;
+            }
+        }
+
+        .desc {
+            margin-bottom: 1rem;
+        }
+
+        .hero-btn {
+            font-size: .85rem;
+            font-weight: 500;
+            padding: .7rem 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .client {
+            gap: 2rem;
+        }
+    }
+}

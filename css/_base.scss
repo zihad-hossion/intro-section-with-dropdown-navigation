@@ -1,0 +1,59 @@
+$White: hsl(0, 0%, 98%);
+$Gray: hsl(0, 0%, 41%);
+$Black: hsl(0, 0%, 8%);
+$Transition: all .25s linear;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-size: .9rem;
+    list-style-type: none;
+    color: $Gray;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    color: $Gray;
+    font-size: .9rem;
+    background-color: transparent;
+    border: none;
+    border-radius: .6rem;
+    outline: none;
+    padding: .6rem 1.25rem;
+    transition: $Transition;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
